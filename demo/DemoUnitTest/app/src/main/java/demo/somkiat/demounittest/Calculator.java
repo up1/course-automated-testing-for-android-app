@@ -6,4 +6,8 @@ public class Calculator {
         return firstOperand + secondOperand;
     }
 
+    public double sub(double firstOperand, double secondOperand) {
+        return firstOperand - secondOperand;
+    }
+
 }
