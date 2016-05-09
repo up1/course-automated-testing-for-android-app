@@ -10,4 +10,7 @@ public class Calculator {
         return firstOperand - secondOperand;
     }
 
+    public double div(double firstOperand, double secondOperand) {
+        return firstOperand / secondOperand;
+    }
 }
