@@ -54,4 +54,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return operandText;
     }
+
+    public void onSub(View view) {
+    }
 }
