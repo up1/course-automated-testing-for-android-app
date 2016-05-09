@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity implements GithubTaskListene
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                loadDataWithRetrofit2();
-                loadDataFromHttpURLConnection();
+                loadDataWithRetrofit2();
+//                loadDataFromHttpURLConnection();
             }
         });
     }

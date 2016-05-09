@@ -38,7 +38,7 @@ public class GitHubTask extends AsyncTask<String, Void, String> {
         this.githubTaskListener.showResult(result);
     }
 
-    private String loadFromNetwork(String urlString) throws IOException {
+    public String loadFromNetwork(String urlString) throws IOException {
         InputStream stream = null;
         String str ="";
 
