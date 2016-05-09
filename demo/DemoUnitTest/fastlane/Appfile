@@ -1,0 +1,2 @@
+json_key_file "xxx-126555491470.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "demo.somkiat.demounittest" # e.g. com.krausefx.app
