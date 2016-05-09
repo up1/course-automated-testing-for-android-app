@@ -1,8 +1,9 @@
 package demo.somkiat.demounittest;
 
-import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
+import android.test.suitebuilder.annotation.LargeTest;
+import android.test.suitebuilder.annotation.MediumTest;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -24,9 +25,9 @@ public class CalculatorAddTest {
     public static final String RESULT = "3.0";
 
     @Rule
-    public ActivityTestRule<MainActivity> mActivityRule =
-            new ActivityTestRule<MainActivity>(MainActivity.class);
+    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class);
 
+    @MediumTest
     @Test
     public void calculatorAdd() {
         onView(withId(R.id.operand_one_edit_text)).perform(typeText(ONE));
@@ -35,6 +36,13 @@ public class CalculatorAddTest {
         onView(withId(R.id.operation_result_text_view)).check(matches(withText(RESULT)));
     }
 
+    @LargeTest
+    @Test
+    public void calculatorAdd2() {
+        onView(withId(R.id.operand_one_edit_text)).perform(typeText(ONE));
+        onView(withId(R.id.operand_two_edit_text)).perform(typeText(TWO));
+        onView(withId(R.id.operation_add_button)).perform(click());
+        onView(withId(R.id.operation_result_text_view)).check(matches(withText(RESULT)));
+    }
+
 }
-
-
