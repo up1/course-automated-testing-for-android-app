@@ -18,7 +18,8 @@
         <activity android:name=".ListviewActivity" />
         <activity android:name=".ListviewWithScrollbarActivity" />
         <activity android:name=".HelloActivity" />
-        <activity android:name=".ToolbarActivity"></activity>
+        <activity android:name=".ToolbarActivity" />
+        <activity android:name=".NumberListviewActivity"></activity>
     </application>
 
 </manifest>

@@ -22,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ToolbarActivity.class);
         startActivity(intent);
     }
+
+    public void listview(View view) {
+        Intent intent = new Intent(this, NumberListviewActivity.class);
+        startActivity(intent);
+    }
 }
