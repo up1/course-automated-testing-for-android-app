@@ -5,4 +5,5 @@
     <string name="greet">Greet</string>
     <string name="hello">สวัสดี</string>
     <string name="disable">Enable/Disable</string>
+    <string name="my_title">Hello my title</string>
 </resources>

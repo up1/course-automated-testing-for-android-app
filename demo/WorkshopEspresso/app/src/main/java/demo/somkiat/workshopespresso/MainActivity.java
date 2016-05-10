@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HelloActivity.class);
         startActivity(intent);
     }
+
+    public void toolbarTitle(View view) {
+        Intent intent = new Intent(this, ToolbarActivity.class);
+        startActivity(intent);
+    }
 }
