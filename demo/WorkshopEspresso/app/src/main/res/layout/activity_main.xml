@@ -31,6 +31,13 @@
         android:onClick="listview"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate Screen"
+        android:onClick="rotateScreen"
+        />
+
 </LinearLayout>
 
 

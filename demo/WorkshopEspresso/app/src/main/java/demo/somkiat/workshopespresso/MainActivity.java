@@ -29,4 +29,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void rotateScreen(View view) {
+        Intent intent = new Intent(this, RotateScreenActivity.class);
+        startActivity(intent);
+    }
 }
