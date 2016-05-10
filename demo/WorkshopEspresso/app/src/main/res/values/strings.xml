@@ -2,4 +2,7 @@
     <string name="app_name">WorkshopEspresso</string>
     <string name="title_activity">To Do List Test</string>
     <string name="item_selected">Item selected: </string>
+    <string name="greet">Greet</string>
+    <string name="hello">สวัสดี</string>
+    <string name="disable">Enable/Disable</string>
 </resources>
