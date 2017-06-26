@@ -70,8 +70,9 @@ task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
 
     sourceDirectories = files([mainSrc])
     classDirectories = files([debugTree])
-    executionData = files(["${buildDir}/jacoco/testDebugUnitTest.exec",
-                           "${buildDir}/outputs/code-coverage/connected/coverage.ec"
+    executionData = fileTree(dir: "$buildDir", includes: [
+            "jacoco/testDebugUnitTest.exec",
+            "outputs/code-coverage/connected/*coverage.ec"
     ])
 
     // Work-around to allow us to build list of executionData files in doFirst
@@ -88,7 +89,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
             subproject.pluginManager.hasPlugin('java')
         }.each { subproject ->
             additionalSourceDirs files((Set<File>) subproject.sourceSets.main.allJava.srcDirs)
-            additionalClassDirs ((FileCollection) subproject.sourceSets.main.output)
+            additionalClassDirs((FileCollection) subproject.sourceSets.main.output)
             if (subproject.pluginManager.hasPlugin('jacoco')) {
                 executionData subproject.tasks.jacocoTestReport.executionData
             }
