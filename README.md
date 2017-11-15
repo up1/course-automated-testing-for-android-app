@@ -32,5 +32,7 @@
 * Google Code sample
   * [Architecture Component](https://github.com/googlesamples/android-architecture-components)
   * [Android Architecture](https://github.com/googlesamples/android-architecture)
+  
+* [Android Testing Guideline](https://developer.android.com/studio/test/index.html)
 
 
