@@ -101,7 +101,8 @@ task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
     }
 }
 
-dependsOn 'createDebugCoverageReport'
+task fullCoverageReport(type: JacocoReport) {
+    dependsOn 'createDebugCoverageReport'
     dependsOn 'testDebugUnitTest'
     reports {
         xml.enabled = true
@@ -125,3 +126,4 @@ dependsOn 'createDebugCoverageReport'
             "jacoco/testDebugUnitTest.exec",
             "outputs/code-coverage/connected/*coverage.ec"
     ])
+}
