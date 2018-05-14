@@ -7,6 +7,9 @@
   * Unit testing
   * UI-less testing
   * UI testing
+* Android Testing
+  * Non-UI Testing => JVM Unit testing, Robolectic and Testable application
+  * UI Testing => Instrumentation Unit testing and Instrument UI Testing (Espresso and UI Automator)
 * Write a first test with JUnit
   * Write test case
   * Run test with Gradle
@@ -25,8 +28,8 @@
   * Continuous Integration (CI)
   * Continuous Delivery/Deployment (CD)
   * Tools
-    * Jenkins
-    * Fastlane
+    * [Jenkins](https://jenkins.io/)
+    * [Fastlane](https://fastlane.tools/)
 
 # References
 * Google Code sample
